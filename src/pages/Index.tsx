@@ -7,10 +7,12 @@ import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
   return (
-    <div className="min-h-screen leaf-pattern flex flex-col relative overflow-hidden">
-      {/* Reduced Decorative Elements - kept only two */}
+    <div className="min-h-screen mithila-pattern flex flex-col relative overflow-hidden">
+      {/* Mithila painting inspired decorative elements */}
       <DecorativeElement type="leaf" className="absolute top-10 left-5 opacity-20 animate-float" />
       <DecorativeElement type="flower" className="absolute bottom-20 right-5 opacity-20 animate-float" />
+      <DecorativeElement type="peacock" className="absolute top-40 right-10 opacity-15 animate-float-slow" />
+      <DecorativeElement type="fish" className="absolute bottom-40 left-10 opacity-15 animate-float-slow" />
       
       <div className="container mx-auto px-4 py-8 flex flex-col justify-between flex-grow">
         <header className="w-full flex justify-center py-4">
@@ -19,12 +21,22 @@ const Index = () => {
         
         <main className="flex flex-col items-center justify-center flex-grow py-8">
           <div className="max-w-5xl mx-auto text-center px-4">
-            <div className="w-52 h-52 md:w-64 md:h-64 mx-auto mb-6 animate-pulse-slow">
-              <img 
-                src="/lovable-uploads/7d1313b0-e6d2-4d9c-9f95-077247542a86.png" 
-                alt="Mithila Sattvik Makhana" 
-                className="w-full h-full object-contain"
-              />
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
+              <div className="w-52 h-52 md:w-64 md:h-64 mx-auto animate-pulse-slow">
+                <img 
+                  src="/lovable-uploads/7d1313b0-e6d2-4d9c-9f95-077247542a86.png" 
+                  alt="Mithila Sattvik Makhana" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow">
+                <img 
+                  src="/lovable-uploads/1d324de3-1e03-409e-989d-75a0423c23f0.png" 
+                  alt="Makhana Man Mascot" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">

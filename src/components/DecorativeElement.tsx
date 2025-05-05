@@ -2,7 +2,7 @@
 import React from 'react';
 
 interface DecorativeElementProps {
-  type: 'leaf' | 'flower' | 'border' | 'zigzag';
+  type: 'leaf' | 'flower' | 'border' | 'zigzag' | 'peacock' | 'fish';
   className?: string;
   style?: React.CSSProperties;
 }
@@ -25,6 +25,32 @@ const DecorativeElement = ({ type, className = '', style }: DecorativeElementPro
             <circle cx="50" cy="50" r="15" />
             <path d="M50,20 Q35,35 20,50 Q35,65 50,80 Q65,65 80,50 Q65,35 50,20 Z" fill="none" stroke="currentColor" strokeWidth="5" />
             <path d="M20,50 Q35,35 50,20 Q65,35 80,50 Q65,65 50,80 Q35,65 20,50 Z" fill="none" stroke="currentColor" strokeWidth="5" />
+          </svg>
+        </div>
+      );
+    
+    case 'peacock':
+      return (
+        <div className={`w-32 h-32 md:w-40 md:h-40 text-mithila-blue opacity-60 ${className}`} style={style}>
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="30" r="10" />
+            <path d="M50,40 L50,70" />
+            <path d="M30,50 Q50,30 70,50" />
+            <path d="M20,60 Q50,20 80,60" />
+            <path d="M10,70 Q50,10 90,70" />
+            <path d="M30,75 L50,70 L70,75" />
+          </svg>
+        </div>
+      );
+      
+    case 'fish':
+      return (
+        <div className={`w-24 h-24 md:w-32 md:h-32 text-mithila-orange opacity-60 ${className}`} style={style}>
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,50 C40,30 60,30 80,50 C60,70 40,70 20,50 Z" />
+            <circle cx="70" cy="50" r="5" />
+            <path d="M80,50 L90,40" />
+            <path d="M80,50 L90,60" />
           </svg>
         </div>
       );
