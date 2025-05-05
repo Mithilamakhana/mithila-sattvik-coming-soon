@@ -1,12 +1,77 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect, useState } from 'react';
+import CountdownTimer from '@/components/CountdownTimer';
+import EmailSubscription from '@/components/EmailSubscription';
+import DecorativeElement from '@/components/DecorativeElement';
+import SocialIcons from '@/components/SocialIcons';
+import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
+  // Set the launch date to 30 days from now
+  const [launchDate, setLaunchDate] = useState(() => {
+    const date = new Date();
+    date.setDate(date.getDate() + 30);
+    return date;
+  });
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen leaf-pattern flex flex-col relative overflow-hidden">
+      {/* Decorative Elements */}
+      <DecorativeElement type="leaf" className="absolute top-10 left-5 opacity-20 animate-float" />
+      <DecorativeElement type="flower" className="absolute bottom-20 right-5 opacity-20 animate-float" />
+      <DecorativeElement type="leaf" className="absolute top-1/4 right-10 opacity-20 transform rotate-45 animate-float" style={{ animationDelay: "2s" }} />
+      <DecorativeElement type="flower" className="absolute bottom-1/3 left-10 opacity-20 transform -rotate-15 animate-float" style={{ animationDelay: "3s" }} />
+      
+      <div className="container mx-auto px-4 py-8 flex flex-col justify-between flex-grow">
+        <header className="w-full flex justify-center py-4">
+          <DecorativeElement type="border" className="w-full max-w-md" />
+        </header>
+        
+        <main className="flex flex-col items-center justify-center flex-grow py-8">
+          <div className="max-w-5xl mx-auto text-center px-4">
+            <div className="w-52 h-52 md:w-64 md:h-64 mx-auto mb-6 animate-pulse-slow">
+              <img 
+                src="/lovable-uploads/7d1313b0-e6d2-4d9c-9f95-077247542a86.png" 
+                alt="Mithila Sattvik Makhana" 
+                className="w-full h-full object-contain"
+              />
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
+              Coming Soon
+            </h1>
+            
+            <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12">
+              We're preparing to bring you the finest quality Makhana, sourced directly from the heart of Mithila. 
+              Pure, natural, and traditionally processed for authentic taste and maximum nutrition.
+            </p>
+            
+            <div className="mb-12">
+              <h2 className="text-xl md:text-2xl font-medium mb-6 font-heading">Launching In</h2>
+              <CountdownTimer targetDate={launchDate} />
+            </div>
+            
+            <div className="mb-12">
+              <h2 className="text-xl md:text-2xl font-medium mb-6 font-heading">Get Notified When We Launch</h2>
+              <EmailSubscription />
+            </div>
+          </div>
+        </main>
+        
+        <footer className="mt-auto w-full">
+          <div className="py-8 border-t border-mithila-green border-opacity-20">
+            <div className="mb-4 text-center">
+              <p className="text-lg font-medium font-heading mb-2">Connect With Us</p>
+              <SocialIcons />
+            </div>
+            
+            <p className="text-center text-sm text-mithila-green text-opacity-70 mt-6">
+              © {new Date().getFullYear()} Mithila Sattvik Makhana. All rights reserved.
+            </p>
+          </div>
+        </footer>
       </div>
+      <Toaster />
     </div>
   );
 };
