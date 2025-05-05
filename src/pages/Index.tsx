@@ -9,9 +9,9 @@ const Index = () => {
   return (
     <div className="min-h-screen mithila-pattern flex flex-col relative overflow-hidden">
       {/* Mithila painting inspired decorative elements */}
-      <DecorativeElement type="leaf" className="absolute top-10 left-5 opacity-20 animate-float" />
-      <DecorativeElement type="flower" className="absolute bottom-20 right-5 opacity-20 animate-float" />
-      <DecorativeElement type="peacock" className="absolute top-40 right-10 opacity-15 animate-float-slow" />
+      <DecorativeElement type="leaf" className="absolute top-10 left-5 opacity-20 animate-float-slow" />
+      <DecorativeElement type="flower" className="absolute bottom-20 right-5 opacity-20 animate-float-slow" />
+      {/* Removed the peacock element that was near the logo area */}
       <DecorativeElement type="fish" className="absolute bottom-40 left-10 opacity-15 animate-float-slow" />
       
       <div className="container mx-auto px-4 py-8 flex flex-col justify-between flex-grow">
