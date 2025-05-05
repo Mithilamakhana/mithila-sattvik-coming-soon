@@ -4,13 +4,14 @@ import React from 'react';
 interface DecorativeElementProps {
   type: 'leaf' | 'flower' | 'border' | 'zigzag';
   className?: string;
+  style?: React.CSSProperties;
 }
 
-const DecorativeElement = ({ type, className = '' }: DecorativeElementProps) => {
+const DecorativeElement = ({ type, className = '', style }: DecorativeElementProps) => {
   switch (type) {
     case 'leaf':
       return (
-        <div className={`w-16 h-16 md:w-24 md:h-24 text-mithila-green opacity-70 ${className}`}>
+        <div className={`w-16 h-16 md:w-24 md:h-24 text-mithila-green opacity-70 ${className}`} style={style}>
           <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M50,10 C30,10 10,30 10,50 C10,70 30,90 50,90 C70,90 90,70 90,50 C70,50 50,30 50,10 Z" />
           </svg>
@@ -19,7 +20,7 @@ const DecorativeElement = ({ type, className = '' }: DecorativeElementProps) => 
     
     case 'flower':
       return (
-        <div className={`w-20 h-20 md:w-28 md:h-28 text-mithila-orange opacity-70 ${className}`}>
+        <div className={`w-20 h-20 md:w-28 md:h-28 text-mithila-orange opacity-70 ${className}`} style={style}>
           <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="15" />
             <path d="M50,20 Q35,35 20,50 Q35,65 50,80 Q65,65 80,50 Q65,35 50,20 Z" fill="none" stroke="currentColor" strokeWidth="5" />
@@ -30,12 +31,12 @@ const DecorativeElement = ({ type, className = '' }: DecorativeElementProps) => 
       
     case 'border':
       return (
-        <div className={`decorative-border h-3 ${className}`}></div>
+        <div className={`decorative-border h-3 ${className}`} style={style}></div>
       );
       
     case 'zigzag':
       return (
-        <div className={`w-full h-8 overflow-hidden ${className}`}>
+        <div className={`w-full h-8 overflow-hidden ${className}`} style={style}>
           <svg viewBox="0 0 100 10" preserveAspectRatio="none">
             <path 
               d="M0,0 L10,10 L20,0 L30,10 L40,0 L50,10 L60,0 L70,10 L80,0 L90,10 L100,0 L100,10 L0,10 Z" 
