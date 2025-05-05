@@ -1,26 +1,16 @@
 
-import React, { useEffect, useState } from 'react';
-import CountdownTimer from '@/components/CountdownTimer';
+import React from 'react';
 import EmailSubscription from '@/components/EmailSubscription';
 import DecorativeElement from '@/components/DecorativeElement';
 import SocialIcons from '@/components/SocialIcons';
 import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
-  // Set the launch date to 30 days from now
-  const [launchDate, setLaunchDate] = useState(() => {
-    const date = new Date();
-    date.setDate(date.getDate() + 30);
-    return date;
-  });
-
   return (
     <div className="min-h-screen leaf-pattern flex flex-col relative overflow-hidden">
-      {/* Decorative Elements */}
+      {/* Reduced Decorative Elements - kept only two */}
       <DecorativeElement type="leaf" className="absolute top-10 left-5 opacity-20 animate-float" />
       <DecorativeElement type="flower" className="absolute bottom-20 right-5 opacity-20 animate-float" />
-      <DecorativeElement type="leaf" className="absolute top-1/4 right-10 opacity-20 transform rotate-45 animate-float" style={{ animationDelay: "2s" }} />
-      <DecorativeElement type="flower" className="absolute bottom-1/3 left-10 opacity-20 transform -rotate-15 animate-float" style={{ animationDelay: "3s" }} />
       
       <div className="container mx-auto px-4 py-8 flex flex-col justify-between flex-grow">
         <header className="w-full flex justify-center py-4">
@@ -45,11 +35,6 @@ const Index = () => {
               We're preparing to bring you the finest quality Makhana, sourced directly from the heart of Mithila. 
               Pure, natural, and traditionally processed for authentic taste and maximum nutrition.
             </p>
-            
-            <div className="mb-12">
-              <h2 className="text-xl md:text-2xl font-medium mb-6 font-heading">Launching In</h2>
-              <CountdownTimer targetDate={launchDate} />
-            </div>
             
             <div className="mb-12">
               <h2 className="text-xl md:text-2xl font-medium mb-6 font-heading">Get Notified When We Launch</h2>
