@@ -112,3 +112,10 @@
   transform-origin: top center;
   display: inline-block;
 }
+
+/* Add responsive positioning for the mascot */
+@media (max-width: 640px) {
+  .mascot-position {
+    bottom: -20px;
+  }
+}

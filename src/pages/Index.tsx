@@ -20,7 +20,7 @@ const Index = () => {
         
         <main className="flex flex-col items-center justify-center flex-grow py-8">
           <div className="max-w-5xl mx-auto text-center px-4">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
+            <div className="flex flex-col items-center justify-center gap-6 mb-8 relative">
               <div className="w-64 h-64 md:w-72 md:h-72 mx-auto animate-pendulum origin-top">
                 <img 
                   src="/lovable-uploads/674e9549-ffb1-40f1-b894-7f08b834c97c.png" 
@@ -29,7 +29,7 @@ const Index = () => {
                 />
               </div>
               
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow">
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow absolute -bottom-20">
                 <img 
                   src="/lovable-uploads/1d324de3-1e03-409e-989d-75a0423c23f0.png" 
                   alt="Makhana Man Mascot" 
@@ -38,18 +38,20 @@ const Index = () => {
               </div>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
-              Coming Soon
-            </h1>
-            
-            <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12">
-              We're preparing to bring you the finest quality Makhana, sourced directly from the heart of Mithila. 
-              Pure, natural, and traditionally processed for authentic taste and maximum nutrition.
-            </p>
-            
-            <div className="mb-12">
-              <h2 className="text-xl md:text-2xl font-medium mb-6 font-heading">Get Notified When We Launch</h2>
-              <EmailSubscription />
+            <div className="mt-24">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
+                Coming Soon
+              </h1>
+              
+              <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12">
+                We're preparing to bring you the finest quality Makhana, sourced directly from the heart of Mithila. 
+                Pure, natural, and traditionally processed for authentic taste and maximum nutrition.
+              </p>
+              
+              <div className="mb-12">
+                <h2 className="text-xl md:text-2xl font-medium mb-6 font-heading">Get Notified When We Launch</h2>
+                <EmailSubscription />
+              </div>
             </div>
           </div>
         </main>
