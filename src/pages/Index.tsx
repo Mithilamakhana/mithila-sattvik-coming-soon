@@ -38,7 +38,7 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="mt-32">
+            <div className="mt-30">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
                 Coming Soon
               </h1>
