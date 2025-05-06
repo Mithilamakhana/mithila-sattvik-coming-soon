@@ -2,12 +2,13 @@
 import React from 'react';
 
 interface DecorativeElementProps {
-  type: 'leaf' | 'flower' | 'border' | 'zigzag' | 'peacock' | 'fish';
+  type: 'leaf' | 'flower' | 'border' | 'zigzag' | 'peacock' | 'fish' | 'mithila-border';
   className?: string;
   style?: React.CSSProperties;
+  position?: 'top' | 'bottom' | 'left' | 'right' | 'all';
 }
 
-const DecorativeElement = ({ type, className = '', style }: DecorativeElementProps) => {
+const DecorativeElement = ({ type, className = '', style, position = 'all' }: DecorativeElementProps) => {
   switch (type) {
     case 'leaf':
       return (
@@ -73,6 +74,25 @@ const DecorativeElement = ({ type, className = '', style }: DecorativeElementPro
         </div>
       );
       
+    case 'mithila-border':
+      if (position === 'top' || position === 'bottom') {
+        return (
+          <div className={`w-full ${className}`} style={style}>
+            <div className="mithila-horizontal-border"></div>
+          </div>
+        );
+      } else if (position === 'left' || position === 'right') {
+        return (
+          <div className={`h-full ${className}`} style={style}>
+            <div className={`mithila-vertical-border ${position === 'right' ? 'rotate-180' : ''}`}></div>
+          </div>
+        );
+      } else { // 'all'
+        return (
+          <div className={`mithila-border-frame ${className}`} style={style}></div>
+        );
+      }
+
     default:
       return null;
   }
