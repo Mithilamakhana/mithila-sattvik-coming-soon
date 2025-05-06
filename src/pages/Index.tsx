@@ -13,29 +13,13 @@ const Index = () => {
       <DecorativeElement type="flower" className="absolute bottom-20 right-5 opacity-20 animate-float-slow" />
       <DecorativeElement type="fish" className="absolute bottom-40 left-10 opacity-15 animate-float-slow" />
       
-      {/* Mithila border frame */}
-      <div className="fixed inset-0 pointer-events-none z-10">
-        <div className="absolute top-0 left-0 right-0">
-          <DecorativeElement type="mithila-border" position="top" />
-        </div>
-        <div className="absolute bottom-0 left-0 right-0">
-          <DecorativeElement type="mithila-border" position="bottom" />
-        </div>
-        <div className="absolute top-0 left-0 bottom-0">
-          <DecorativeElement type="mithila-border" position="left" />
-        </div>
-        <div className="absolute top-0 right-0 bottom-0">
-          <DecorativeElement type="mithila-border" position="right" />
-        </div>
-      </div>
-      
-      <div className="container mx-auto px-4 py-8 flex flex-col justify-between flex-grow relative z-0">
+      <div className="container mx-auto px-4 py-8 flex flex-col justify-between flex-grow">
         <header className="w-full flex justify-center py-4">
           <DecorativeElement type="border" className="w-full max-w-md" />
         </header>
         
         <main className="flex flex-col items-center justify-center flex-grow py-8">
-          <div className="max-w-5xl mx-auto text-center px-4 mithila-content-frame relative">
+          <div className="max-w-5xl mx-auto text-center px-4">
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
               <div className="w-64 h-64 md:w-72 md:h-72 mx-auto animate-pendulum origin-top">
                 <img 
