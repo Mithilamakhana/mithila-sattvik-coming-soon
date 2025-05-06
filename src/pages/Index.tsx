@@ -29,7 +29,7 @@ const Index = () => {
                 />
               </div>
               
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow absolute -bottom-42 mascot-position">
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow absolute -bottom-22 mascot-position">
                 <img 
                   src="/lovable-uploads/1d324de3-1e03-409e-989d-75a0423c23f0.png" 
                   alt="Makhana Man Mascot" 
@@ -38,14 +38,14 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="mt-40">
+            <div className="mt-22">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
                 Coming Soon
               </h1>
               
               <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12">
                 We're preparing to bring you the finest quality Makhana, sourced directly from the heart of Mithila. 
-                Pure, natural, and traditionally processed for authentic taste and maximum nutrition.
+                Pure, natural, and traditionally processed for authentic taste and maximum nutrition..
               </p>
               
               <div className="mb-12">
