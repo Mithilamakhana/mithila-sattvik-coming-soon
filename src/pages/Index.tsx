@@ -21,38 +21,36 @@ const Index = () => {
         
         <main className="flex flex-col items-center justify-center flex-grow py-8">
           <div className="max-w-5xl mx-auto text-center px-4">
-            <div className="mithila-border p-6 md:p-8 rounded-lg">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
-                <div className="w-52 h-52 md:w-64 md:h-64 mx-auto animate-pulse-slow">
-                  <img 
-                    src="/lovable-uploads/7d1313b0-e6d2-4d9c-9f95-077247542a86.png" 
-                    alt="Mithila Sattvik Makhana" 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                
-                <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow">
-                  <img 
-                    src="/lovable-uploads/1d324de3-1e03-409e-989d-75a0423c23f0.png" 
-                    alt="Makhana Man Mascot" 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
+              <div className="w-52 h-52 md:w-64 md:h-64 mx-auto animate-pulse-slow">
+                <img 
+                  src="/lovable-uploads/7d1313b0-e6d2-4d9c-9f95-077247542a86.png" 
+                  alt="Mithila Sattvik Makhana" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
-                Coming Soon
-              </h1>
-              
-              <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12">
-                We're preparing to bring you the finest quality Makhana, sourced directly from the heart of Mithila. 
-                Pure, natural, and traditionally processed for authentic taste and maximum nutrition.
-              </p>
-              
-              <div className="mb-12">
-                <h2 className="text-xl md:text-2xl font-medium mb-6 font-heading">Get Notified When We Launch</h2>
-                <EmailSubscription />
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow">
+                <img 
+                  src="/lovable-uploads/1d324de3-1e03-409e-989d-75a0423c23f0.png" 
+                  alt="Makhana Man Mascot" 
+                  className="w-full h-full object-contain"
+                />
               </div>
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
+              Coming Soon
+            </h1>
+            
+            <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12">
+              We're preparing to bring you the finest quality Makhana, sourced directly from the heart of Mithila. 
+              Pure, natural, and traditionally processed for authentic taste and maximum nutrition.
+            </p>
+            
+            <div className="mb-12">
+              <h2 className="text-xl md:text-2xl font-medium mb-6 font-heading">Get Notified When We Launch</h2>
+              <EmailSubscription />
             </div>
           </div>
         </main>
@@ -71,10 +69,6 @@ const Index = () => {
         </footer>
       </div>
       <Toaster />
-      
-      {/* Add decorative borders on left and right sides */}
-      <div className="hidden md:block fixed left-0 top-0 bottom-0 w-6 mithila-vertical-border-left"></div>
-      <div className="hidden md:block fixed right-0 top-0 bottom-0 w-6 mithila-vertical-border-right"></div>
     </div>
   );
 };
