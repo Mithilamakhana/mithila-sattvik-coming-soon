@@ -29,7 +29,7 @@ const Index = () => {
                 />
               </div>
               
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow absolute -bottom-38 mascot-position">
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow absolute -bottom-28 mascot-position">
                 <img 
                   src="/lovable-uploads/1d324de3-1e03-409e-989d-75a0423c23f0.png" 
                   alt="Makhana Man Mascot" 
