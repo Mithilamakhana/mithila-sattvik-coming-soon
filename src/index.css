@@ -98,3 +98,17 @@
   animation: float 8s infinite ease-in-out;
 }
 
+@keyframes pendulum {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+.animate-pendulum {
+  animation: pendulum 3s infinite ease-in-out;
+  transform-origin: top center;
+  display: inline-block;
+}

@@ -11,7 +11,6 @@ const Index = () => {
       {/* Mithila painting inspired decorative elements */}
       <DecorativeElement type="leaf" className="absolute top-10 left-5 opacity-20 animate-float-slow" />
       <DecorativeElement type="flower" className="absolute bottom-20 right-5 opacity-20 animate-float-slow" />
-      {/* Removed the peacock element that was near the logo area */}
       <DecorativeElement type="fish" className="absolute bottom-40 left-10 opacity-15 animate-float-slow" />
       
       <div className="container mx-auto px-4 py-8 flex flex-col justify-between flex-grow">
@@ -22,9 +21,9 @@ const Index = () => {
         <main className="flex flex-col items-center justify-center flex-grow py-8">
           <div className="max-w-5xl mx-auto text-center px-4">
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
-              <div className="w-52 h-52 md:w-64 md:h-64 mx-auto animate-pulse-slow">
+              <div className="w-64 h-64 md:w-72 md:h-72 mx-auto animate-pendulum origin-top">
                 <img 
-                  src="/lovable-uploads/7d1313b0-e6d2-4d9c-9f95-077247542a86.png" 
+                  src="/lovable-uploads/674e9549-ffb1-40f1-b894-7f08b834c97c.png" 
                   alt="Mithila Sattvik Makhana" 
                   className="w-full h-full object-contain"
                 />
