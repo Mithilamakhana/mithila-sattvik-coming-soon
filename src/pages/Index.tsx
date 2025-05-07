@@ -20,26 +20,25 @@ const Index = () => {
         
         <main className="flex flex-col items-center justify-center flex-grow py-8">
           <div className="max-w-5xl mx-auto text-center px-4">
-            {/* Logo and Mascot Container with HTML/CSS positioning */}
-            <div className="logo-mascot-container">
-              <div className="logo-container">
+            <div className="flex flex-col items-center justify-center gap-6 mb-12 relative">
+              <div className="w-64 h-64 md:w-72 md:h-72 mx-auto animate-pendulum origin-top">
                 <img 
                   src="/lovable-uploads/674e9549-ffb1-40f1-b894-7f08b834c97c.png" 
                   alt="Mithila Sattvik Makhana" 
-                  className="logo-image"
+                  className="w-full h-full object-contain"
                 />
               </div>
               
-              <div className="mascot-container">
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto animate-bounce-slow absolute mascot-position">
                 <img 
                   src="/lovable-uploads/1d324de3-1e03-409e-989d-75a0423c23f0.png" 
                   alt="Makhana Man Mascot" 
-                  className="mascot-image"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
             
-            <div className="content-container">
+            <div className="mt-32 md:mt-36 lg:mt-40">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
                 Coming Soon
               </h1>
