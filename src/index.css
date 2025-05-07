@@ -115,20 +115,20 @@
 
 /* Improved mascot positioning for all screen sizes */
 .mascot-position {
-  bottom: -45px; /* Default position - moved further down */
+  bottom: -32px; /* Default position */
 }
 
 /* Enhanced responsive positioning for the mascot */
 @media (max-width: 768px) {
   .mascot-position {
-    bottom: -60px; /* Increased distance */
+    bottom: -40px;
   }
 }
 
 /* Extra adjustment for small mobile devices */
 @media (max-width: 480px) {
   .mascot-position {
-    bottom: -70px; /* Move significantly lower on small mobile devices */
+    bottom: -50px; /* Move even lower on small mobile devices */
     transform: scale(0.9); /* Slightly reduce size on very small screens */
   }
 }
@@ -136,7 +136,7 @@
 /* Extremely small devices */
 @media (max-width: 360px) {
   .mascot-position {
-    bottom: -80px; /* Much lower position for very small screens */
+    bottom: -60px;
     transform: scale(0.85);
   }
 }
