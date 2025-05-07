@@ -20,7 +20,7 @@ const Index = () => {
         
         <main className="flex flex-col items-center justify-center flex-grow py-8">
           <div className="max-w-5xl mx-auto text-center px-4">
-            <div className="flex flex-col items-center justify-center gap-6 mb-8 relative">
+            <div className="flex flex-col items-center justify-center gap-6 mb-12 relative">
               <div className="w-64 h-64 md:w-72 md:h-72 mx-auto animate-pendulum origin-top">
                 <img 
                   src="/lovable-uploads/674e9549-ffb1-40f1-b894-7f08b834c97c.png" 
@@ -38,14 +38,14 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="mt-30">
+            <div className="mt-32 md:mt-36 lg:mt-40">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-mithila-green tracking-tight">
                 Coming Soon
               </h1>
               
               <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12">
                 We're preparing to bring you the finest quality Makhana, sourced directly from the heart of Mithila. 
-                Pure, natural, and traditionally processed for authentic taste and maximum nutrition..
+                Pure, natural, and traditionally processed for authentic taste and maximum nutrition.
               </p>
               
               <div className="mb-12">
